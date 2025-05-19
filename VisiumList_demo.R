@@ -49,5 +49,3 @@ import(tvl)
 #> altExpNames(0):
 #> spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 #> imgData names(4): sample_id image_id data scaleFactor
-
-
