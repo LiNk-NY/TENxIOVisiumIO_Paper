@@ -1,13 +1,14 @@
 setwd("~/Downloads")
 
-download.file(
-    url = paste0(
-        "https://mghp.osn.xsede.org/bir190004-bucket01/BiocXenDemo/",
-        "Xenium_Prime_MultiCellSeg_Mouse_Ileum_tiny_outs.zip"
-    ),
-    destfile =
-        "Xenium_Prime_MultiCellSeg_Mouse_Ileum_tiny_outs.zip"
-)
+if (!file.exists("Xenium_Prime_MultiCellSeg_Mouse_Ileum_tiny_outs.zip"))
+    download.file(
+        url = paste0(
+            "https://mghp.osn.xsede.org/bir190004-bucket01/BiocXenDemo/",
+            "Xenium_Prime_MultiCellSeg_Mouse_Ileum_tiny_outs.zip"
+        ),
+        destfile =
+            "Xenium_Prime_MultiCellSeg_Mouse_Ileum_tiny_outs.zip"
+    )
 
 reprex::reprex({
     setwd("~/Downloads")
